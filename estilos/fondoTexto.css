@@ -1,0 +1,190 @@
+.grilla {
+  display: grid;
+  width: 100%;
+  height: 600px;
+  grid-template-columns: 200px 1fr 1fr;
+  grid-template-rows: 150px 1fr 1fr 100px;
+  grid-gap: 1rem;
+  grid-template-areas: "header header header" "sidebar content-1 content-1" "sidebar content-2 content-3" "footer footer footer"; }
+  .grilla .header {
+    grid-area: header; }
+  .grilla .sidebar {
+    grid-area: sidebar;
+    align-self: flex-start;
+    background-color: cornflowerblue;
+    border: black solid 3px; }
+  .grilla .content-1 {
+    grid-area: content-1;
+    align-content: center; }
+  .grilla .content-2 {
+    grid-area: content-2;
+    margin: 30px; }
+  .grilla .content-3 {
+    grid-area: content-3; }
+  .grilla .footer {
+    grid-area: footer;
+    background-color: #fc0404;
+    border: solid black 10px;
+    width: 100%;
+    color: black; }
+
+/*grid index*/
+.indice {
+  display: grid;
+  width: 100%;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-gap: 5rem;
+  grid-template-areas: "encabezado encabezado encabezado" "logo logo logo" "block-2 block-2 block-2" "block-3 block-3 block-3" "footer footer footer"; }
+  .indice .encabezado {
+    grid-area: encabezado;
+    margin-bottom: 100px; }
+  .indice .logo {
+    grid-area: logo;
+    align-items: center; }
+  .indice .block-2 {
+    grid-area: block-2;
+    justify-content: center;
+    margin-top: 200 px;
+    margin-bottom: 200 px; }
+  .indice .block-3 {
+    grid-area: block-3;
+    width: 500px;
+    height: 500px;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto; }
+  .indice .footer {
+    grid-area: footer;
+    background-color: #fc0404;
+    border: solid black 10px;
+    width: 100%;
+    color: black; }
+
+ul.botonera {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #000000;
+  width: 100%;
+  position: fixed; }
+
+li {
+  float: left; }
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none; }
+
+li a:hover {
+  background-color: #111111; }
+
+.divFondo {
+  align-content: flex-start;
+  background-color: #861717;
+  border: solid black 4px;
+  margin: 60px;
+  padding: 20px; }
+
+@media only screen and (max-width: 400px) {
+  .mobile__grid {
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 4rem;
+    grid-template-areas: "encabezado" "logo" "block-1" "block-2" "footer"; }
+    .mobile__grid .header {
+      grid-area: encabezado;
+      margin-bottom: 100px; }
+    .mobile__grid .logo {
+      grid-area: logo; }
+    .mobile__grid .block-1 {
+      grid-area: block-1;
+      width: fit-content;
+      height: fit-content; }
+    .mobile__grid .block-2 {
+      grid-area: block-2;
+      height: fit-content;
+      width: fit-content;
+      justify-self: center; }
+    .mobile__grid .footer {
+      grid-area: footer;
+      background-color: #fc0404;
+      border: solid black 5px;
+      width: 100%;
+      color: black; }
+  .ocultar {
+    display: none; } }
+
+.shake {
+  display: inline-block;
+  margin: 0 0.5rem;
+  animation: bounce;
+  animation-duration: 2s; }
+
+.texto__parrafo--centro {
+  text-align: center; }
+
+.elemento__derecha {
+  align-self: flex-end;
+  align-items: center;
+  margin-top: auto;
+  margin-bottom: auto; }
+
+.elemento__img--derecha {
+  align-self: flex-end;
+  margin-bottom: 200px; }
+
+.elemento__izquierda {
+  align-self: flex-start; }
+
+.elemento__img--centrado {
+  display: block;
+  align-content: center;
+  margin: auto; }
+
+.texto__centrar--titulo {
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  text-transform: capitalize;
+  font-size: 36px; }
+
+.texto__parrafo {
+  font-weight: bold;
+  font-family: 'Lato', sans-serif;
+  font-size: 24px; }
+
+.texto__subtitulo--Izq {
+  text-align: left;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  text-transform: capitalize;
+  font-size: 30px;
+  margin: 10px; }
+
+.texto__color--blanco {
+  font-size: 20px;
+  color: #fffafb;
+  padding-top: 25px; }
+
+.texto__color--dorado {
+  color: gold; }
+
+.elemento__borde {
+  border: black 3px double; }
+
+* {
+  padding: 0;
+  margin: 0; }
+
+body {
+  background-image: url("../recursos/fondoJack.png");
+  height: 100vh; }
