@@ -5,7 +5,10 @@
   grid-template-columns: 200px 1fr 1fr;
   grid-template-rows: 150px 1fr 1fr 100px;
   grid-gap: 1rem;
-  grid-template-areas: "header header header" "sidebar content-1 content-1" "sidebar content-2 content-3" "footer footer footer"; }
+  grid-template-areas: "header header header"
+ "sidebar content-1 content-1"
+ "sidebar content-2 content-3"
+ "footer footer footer"; }
   .grilla .header {
     grid-area: header; }
   .grilla .sidebar {
@@ -36,7 +39,11 @@
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-gap: 5rem;
-  grid-template-areas: "encabezado encabezado encabezado" "logo logo logo" "block-2 block-2 block-2" "block-3 block-3 block-3" "footer footer footer"; }
+  grid-template-areas: "encabezado encabezado encabezado"
+ "logo logo logo"
+ "block-2 block-2 block-2"
+ "block-3 block-3 block-3"
+ "footer footer footer"; }
   .indice .encabezado {
     grid-area: encabezado;
     margin-bottom: 100px; }
@@ -99,7 +106,11 @@ li a:hover {
     grid-template-columns: 100%;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     grid-gap: 4rem;
-    grid-template-areas: "encabezado" "logo" "block-1" "block-2" "footer"; }
+    grid-template-areas: "encabezado"
+ "logo"
+ "block-1"
+ "block-2"
+ "footer"; }
     .mobile__grid .header {
       grid-area: encabezado;
       margin-bottom: 100px; }
