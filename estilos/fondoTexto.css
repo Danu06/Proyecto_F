@@ -5,17 +5,19 @@
   grid-template-columns: 200px 1fr 1fr;
   grid-template-rows: 150px 1fr 1fr 100px;
   grid-gap: 1rem;
-  grid-template-areas: "header header header"
- "sidebar content-1 content-1"
- "sidebar content-2 content-3"
- "footer footer footer"; }
+  grid-template-areas: "header1 header1 header1" "sidebar content-1 content-1" "sidebar content-2 content-3" "footer footer footer"; }
   .grilla .header {
-    grid-area: header; }
+    grid-area: header1; }
   .grilla .sidebar {
     grid-area: sidebar;
     align-self: flex-start;
     background-color: cornflowerblue;
     border: black solid 3px; }
+    .grilla .sidebar .shake {
+      display: inline-flex;
+      margin: 0 0.5rem;
+      animation: bounce;
+      animation-duration: 2s; }
   .grilla .content-1 {
     grid-area: content-1;
     align-content: center; }
@@ -39,24 +41,20 @@
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-gap: 5rem;
-  grid-template-areas: "encabezado encabezado encabezado"
- "logo logo logo"
- "block-2 block-2 block-2"
- "block-3 block-3 block-3"
- "footer footer footer"; }
+  grid-template-areas: "encabezado encabezado encabezado" "logo logo logo" "cont-2 cont-2 cont-2" "cont-3 cont-3 cont-3" "footer footer footer"; }
   .indice .encabezado {
     grid-area: encabezado;
     margin-bottom: 100px; }
   .indice .logo {
     grid-area: logo;
     align-items: center; }
-  .indice .block-2 {
-    grid-area: block-2;
+  .indice .cont-2 {
+    grid-area: cont-2;
     justify-content: center;
     margin-top: 200 px;
     margin-bottom: 200 px; }
-  .indice .block-3 {
-    grid-area: block-3;
+  .indice .cont-3 {
+    grid-area: cont-3;
     width: 500px;
     height: 500px;
     justify-content: center;
@@ -105,34 +103,38 @@ li a:hover {
     height: 100vh;
     grid-template-columns: 100%;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    grid-gap: 4rem;
-    grid-template-areas: "encabezado"
- "logo"
- "block-1"
- "block-2"
- "footer"; }
-    .mobile__grid .header {
+    grid-gap: 3rem;
+    grid-template-areas: "encabezado" "logo" "block-1" "block-2" "pie"; }
+    .mobile__grid .encabezado {
       grid-area: encabezado;
       margin-bottom: 100px; }
     .mobile__grid .logo {
       grid-area: logo; }
     .mobile__grid .block-1 {
       grid-area: block-1;
-      width: fit-content;
-      height: fit-content; }
+      width: 340px;
+      align-items: flex-start; }
+      .mobile__grid .block-1 .divFondo {
+        align-content: flex-start;
+        background-color: #861717;
+        border: solid black 4px;
+        margin: 60px;
+        padding: 20px; }
     .mobile__grid .block-2 {
       grid-area: block-2;
-      height: fit-content;
-      width: fit-content;
+      height: 300px;
+      width: 300px;
       justify-self: center; }
-    .mobile__grid .footer {
-      grid-area: footer;
+    .mobile__grid .pie {
+      grid-area: pie;
       background-color: #fc0404;
       border: solid black 5px;
       width: 100%;
       color: black; }
-  .ocultar {
-    display: none; } }
+  .sidebar {
+    display: none;
+    visibility: hidden;
+    animation: none; } }
 
 .shake {
   display: inline-block;
