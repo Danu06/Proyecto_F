@@ -1,8 +1,12 @@
+$rojo:#fc0404;
+$bordo:rgb(134, 23, 23);
+$negro: rgb(0,0,0);
+
 .grilla {
     display: grid;
     width: 100%;
     height: 600px;
-    grid-template-columns: 200px 1fr 1fr;
+    grid-template-columns: 250px 1fr 1fr;
     grid-template-rows: 150px 1fr 1fr 100px;
     grid-gap: 1rem;
     grid-template-areas:
@@ -18,7 +22,7 @@
             grid-area: sidebar;
             align-self: flex-start;
             background-color: cornflowerblue;
-            border: black solid 3px;
+            border: $negro solid 3px;
             .shake {
               display: inline-flex;
               margin: 0 0.5rem;
@@ -29,6 +33,7 @@
         .content-1 {
             grid-area: content-1;
             align-content: center;
+            padding: 60px;
           }
           
         .content-2 {
@@ -42,8 +47,8 @@
           
         .footer {
             grid-area: footer;
-            background-color: #fc0404;
-            border: solid black 10px;
+            background-color: $rojo;
+            border: solid $negro 10px;
             width: 100%;
             color:black;
           }
@@ -95,10 +100,10 @@
           }
           .footer {
             grid-area: footer;
-            background-color: #fc0404;
-            border: solid black 10px;
+            background-color: $rojo;
+            border: solid $negro 10px;
             width: 100%;
-            color:black;
+            color:$negro;
           }
   }
 
@@ -107,7 +112,7 @@
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #000000;
+    background-color:$negro;
     width: 100%;
     position: fixed;
   }
@@ -125,13 +130,13 @@ li {
   }
   
   li a:hover {
-    background-color: #111111;
+    background-color: $negro;
   }
 
 .divFondo{
     align-content: flex-start;
-    background-color:rgb(134, 23, 23);
-    border: solid rgb(0, 0, 0) 4px;
+    background-color: $bordo;
+    border: solid $negro 4px;
     margin: 60px;
     padding: 20px;
   }
@@ -162,29 +167,31 @@ li {
 
     .block-1{
       grid-area: block-1;
-      width: 340px;
-      align-items: flex-start;
+      align-items: center;
+      align-self: center;
 
       .divFondo{
         align-content: flex-start;
-        background-color:rgb(134, 23, 23);
-        border: solid rgb(0, 0, 0) 4px;
-        margin: 60px;
+        background-color: $bordo;
+        border: solid $negro 4px;
+        margin-left: 20px;
+        margin-right: 30px;
         padding: 20px;
+        width: 300px;
       }
     }
     .block-2{
       grid-area: block-2;
-      height: 300px;
+      height: 350x;
       width: 300px;
       justify-self: center;
     }
     .pie{
       grid-area: pie;
-      background-color: #fc0404;
-      border: solid black 5px;
+      background-color: $rojo;
+      border: solid $negro 5px;
       width: 100%;
-      color:black;
+      color:$negro;
     }
   }
 
